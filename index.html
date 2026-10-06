@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TK Digital Studio — custom digital designs, CVs, wallpapers, posters and business graphics.">
+  <title>	Nkateko Tk Personal Digital Studio | Your Idea. Our Design.</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a class="brand" href="#home"><span>Nkateko Tk</span><small>PERSONAL DIGITAL STUDIO</small></a>
+    <button class="menu" aria-label="Open menu">☰</button>
+    <nav>
+      <a href="#home">Home</a><a href="#shop">Shop</a><a href="#custom">Custom Design</a>
+      <a href="#how">How It Works</a><a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">DIGITAL DESIGN • SOUTH AFRICA</p>
+        <h1>Turn your idea<br><em>into a design.</em></h1>
+        <p class="lead">Affordable digital designs made for birthdays, couples, students, creators and small businesses.</p>
+        <div class="actions">
+          <a class="btn primary" href="#shop">Shop Designs</a>
+          <a class="btn secondary" href="#custom">Request Custom Design</a>
+        </div>
+        <div class="trust"><span>⚡ Fast delivery</span><span>✦ Custom-made</span><span>R20+ designs</span></div>
+      </div>
+      <div class="hero-card">
+        <div class="mockup">
+          <div class="mock-top"><span>TK</span><span>✦</span></div>
+          <div class="mock-content"><p>YOUR IDEA.</p><strong>OUR DESIGN.</strong><small>TK DIGITAL STUDIO</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="shop" class="section">
+      <div class="section-head"><div><p class="eyebrow">THE SHOP</p><h2>Popular designs</h2></div><p>Choose a design, then order through WhatsApp.</p></div>
+      <div class="filters">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="wallpapers">Wallpapers</button>
+        <button class="filter" data-filter="personal">Personal</button>
+        <button class="filter" data-filter="business">Business</button>
+        <button class="filter" data-filter="student">Student</button>
+      </div>
+      <div class="products" id="products"></div>
+    </section>
+
+    <section id="custom" class="custom section">
+      <div class="custom-copy"><p class="eyebrow">CUSTOM DESIGN</p><h2>Have something specific in mind?</h2>
+        <p>Tell us what you need and we'll turn your idea into a clean, personalised digital design.</p>
+        <ul><li>Tell us your idea</li><li>Send your text and photos</li><li>Approve the design</li><li>Receive the final file digitally</li></ul>
+      </div>
+      <form id="customForm">
+        <label>Your name<input required name="name" placeholder="Your name"></label>
+        <label>WhatsApp number<input required name="phone" placeholder="e.g. 072 123 4567"></label>
+        <label>What do you need?<select name="type"><option>Custom wallpaper</option><option>Birthday poster</option><option>Couple design</option><option>CV / cover letter</option><option>Business design</option><option>Other</option></select></label>
+        <label>Tell us about it<textarea required name="details" rows="5" placeholder="Colours, text, style, deadline..."></textarea></label>
+        <button class="btn primary" type="submit">Send Request on WhatsApp</button>
+        <p class="form-note">We'll confirm the price and payment details before starting.</p>
+      </form>
+    </section>
+
+    <section id="how" class="section">
+      <div class="section-head"><div><p class="eyebrow">SIMPLE PROCESS</p><h2>How it works</h2></div></div>
+      <div class="steps">
+        <article><b>01</b><h3>Choose</h3><p>Pick a product or request a custom design.</p></article>
+        <article><b>02</b><h3>Order</h3><p>Send your details and any photos or text needed.</p></article>
+        <article><b>03</b><h3>Pay</h3><p>We'll confirm the total and provide the available payment option.</p></article>
+        <article><b>04</b><h3>Receive</h3><p>Your finished digital design is delivered to you.</p></article>
+      </div>
+    </section>
+
+    <section class="cta"><p class="eyebrow">READY?</p><h2>Let's make something people remember.</h2><a class="btn primary" href="#custom">Start a Custom Order</a></section>
+
+    <section id="contact" class="contact section">
+      <div><p class="eyebrow">CONTACT</p><h2>Let's talk.</h2><p>For orders, questions and custom design requests.</p></div>
+      <div class="contact-links">
+        <a href="https://wa.me/27691369156" id="whatsappLink">WhatsApp ↗</a>
+        <a href="#" onclick="return false">Instagram ↗</a>
+        <a href="#" onclick="Buddy_Long_Tk" id="TiktokLink">TikTok ↗</a>
+        <a href="mailto:ngwenyatk32@gmail.com">ngwenyatk32@gmail.com↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer><div><strong>TK DIGITAL STUDIO</strong><p>Your idea. Our design.</p></div><p>© 2026 TK Digital Studio. All rights reserved.</p></footer>
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
